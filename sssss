@@ -1,0 +1,12 @@
+Blitz = createMarker(2492.6001,-1679.6,12.1,"cylinder",2,0,255,0)
+
+function Blitz_func(thePlayer)  
+ 
+-- mensagens que vao aparecer.
+outputChatBox("--Blitz---",thePlayer,255,255,0)
+outputChatBox("Você Foi Parado em uma batida policial, por favor mostre seus documentos",thePlayer,255,255,0)
+outputChatBox("Se não estiver portando habilitação voce ganhara niveis de procurado",thePlayer,255,255,0)
+outputChatBox("--Blitz--",thePlayer,255,255,0)
+takePlayerMoney(thePlayer, 40) -- desconto em dinheiro do player <--- ainda em desenvolvimento --- >
+end
+addEventHandler("onMarkerHit", Blitz, Blitz_func,)
